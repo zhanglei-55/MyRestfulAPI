@@ -13,7 +13,7 @@ import secrets
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://mytest01:v57YzysJ0ajnngSQ@mysql.sqlpub.com/pygametest01'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://user:password@host/databases'
 app.config['JWT_SECRET_KEY'] = secrets.token_urlsafe(32)
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(minutes=5)  # 设置令牌过期时间为5分钟
 db = SQLAlchemy(app)
