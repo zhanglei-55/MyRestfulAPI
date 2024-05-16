@@ -62,4 +62,6 @@ CREATE TABLE user (
 ```shell
 python app.py
 ```
+#### 6. API请求文档
 
+[点击这里跳转请求文档](https://github.com/zhanglei-55/MyRestfulAPI/blob/master/MyRestfulAPI.md)
