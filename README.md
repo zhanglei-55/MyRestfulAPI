@@ -1,4 +1,4 @@
-**### 使用Python Flask实现Rest API
+### 使用Python Flask实现Rest API
 
 #### 1. 克隆仓库代码
 
@@ -63,4 +63,3 @@ CREATE TABLE user (
 python app.py
 ```
 
-**
