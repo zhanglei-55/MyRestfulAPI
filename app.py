@@ -1,7 +1,7 @@
 """
 @File : app.py@Author : mr
-@Description :
-
+@Description : 1.Flask 框架的一个特性 : 会自动创建应用上下文 不需要自己创建 => with app.app_context():  # 创建应用上下文
+2.Flask 框架的一个特性 : 默认使用的交互格式 Content-Type 是 text/html
 @Time : 2024
 """
 from flask import Flask, jsonify, request
@@ -13,7 +13,7 @@ import secrets
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://mytest01:v57YzysJ0ajnngSQ@mysql.sqlpub.com:3306/pygametest01'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://mytest01:v57YzysJ0ajnngSQ@mysql.sqlpub.com/pygametest01'
 app.config['JWT_SECRET_KEY'] = secrets.token_urlsafe(32)
 app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(minutes=5)  # 设置令牌过期时间为5分钟
 db = SQLAlchemy(app)
